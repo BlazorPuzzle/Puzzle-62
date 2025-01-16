@@ -1,0 +1,10 @@
+﻿@page "/"
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Strings> Localizer
+@rendermode @(new InteractiveServerRenderMode(false))
+
+<PageTitle>Home</PageTitle>
+
+<h1>@Localizer["HelloWorld"]</h1>
+
+Welcome to your new app.
